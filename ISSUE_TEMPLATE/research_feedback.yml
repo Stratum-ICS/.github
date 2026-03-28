@@ -1,0 +1,53 @@
+name: Research Feedback
+description: Feedback from using Stratum in an academic or research context
+labels: ["research-feedback", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Stratum is built for researchers. Your domain experience directly shapes how the platform evolves.
+        This template is for feedback from real-world academic or research use.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Research context
+      description: What kind of research are you using Stratum for? (field, team size, use case — anonymized is fine)
+      placeholder: "e.g. systematic literature review in computational biology, team of 4"
+    validations:
+      required: false
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow pain point or gap
+      description: What aspect of your knowledge management workflow does Stratum handle poorly or not at all?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would help?
+      description: Describe the behavior or feature that would address this.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impact on your workflow
+      options:
+        - Blocking — I cannot use Stratum for this
+        - Major — significant friction
+        - Minor — would be a nice improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Examples, references, prior art in other tools.
+    validations:
+      required: false
